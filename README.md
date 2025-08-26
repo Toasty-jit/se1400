@@ -1,4 +1,4 @@
-
+<head>
 <body>
     <header>
         <h1>SE-1400 Course Homepage</h1>
