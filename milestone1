@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>SE1400 Assignmnet Files</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background: #026c99; color: white; padding: 10px 0; text-align: center; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        h1, h2 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        ul li { margin: 5px 0; }
+        ul li a { color: #026c99; text-decoration: none; font-weight: bold; }
+        ul li a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All Call of Duty Games</h1>
+        <p>This website discusses the entirey of every signle call of duty game that came out chronologically and in summarization of what happens in each one.</p>
+    </header>
+    <section>
+        <h2>About Call of Duty</h2>
+        <p>Call of Duty is a gaming series of various realistic war torn events set in the future, past, or present. </p>
+    </section>
 
+    <footer>
+        <p>&copy; <span id="currentYear"></span> All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
