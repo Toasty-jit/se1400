@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>SE1400 Assignmnet Files</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background: #026c99; color: white; padding: 10px 0; text-align: center; }
+        section { max-width: 800px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        h1, h2 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        ul li { margin: 5px 0; }
+        ul li a { color: #026c99; text-decoration: none; font-weight: bold; }
+        ul li a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 10px; margin-top: 20px; background: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Most Famous Call of Duty Games</h1>
+        <p>This website discusses the entirey of every signle call of duty game that came out chronologically and in summarization of what happens in each one.</p>
+    </header>
+    <section>
+        <h2>About Call of Duty</h2>
+        <p>Call of Duty is a gaming series of various realistic war torn events set in the future, past, or present. </p>
+    </section>
+
+<body>
+  <header>
+        <h1>Call of Duty: Modern Warfare</h1>
+    </header>
+    <section>
+        <h2>Game Overview</h2>
+        <p>Call of Duty: Modern Warfare is a first-person shooter video game developed by Infinity Ward and published by Activision. Released in 2019, it serves as a soft reboot of the Modern Warfare sub-series.</p>
+        
+        <h2>Storyline</h2>
+        <p>The game follows a fictional conflict involving a terrorist organization and a CIA operative, as well as a British special forces unit. Players engage in various missions across the globe, tackling themes of war, terrorism, and morality.</p>
+        
+        <h2>Gameplay Mechanics</h2>
+        <p>Modern Warfare features a mix of single-player and multiplayer modes. The gameplay emphasizes tactical combat, with players able to use a variety of weapons and equipment. The game also introduces new mechanics such as a more realistic damage system and the ability to mount weapons for better accuracy.</p>
+        
+        <h2>Multiplayer</h2>
+        <p>The multiplayer mode includes various game types and maps, allowing players to engage in team-based combat. It also features a progression system, allowing players to unlock new weapons and customization options.</p>
+    </section>
+    <footer>
+</body>
+
+<body>
+    <header>
+        <h1>Call of Duty: Black Ops</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>Call of Duty: Black Ops is a first-person shooter video game developed by Treyarch and published by Activision. It was released in November 2010 and is the seventh installment in the Call of Duty series.</p>
+        
+        <h2>Storyline</h2>
+        <p>The game is set during the Cold War era and follows a CIA operative named Alex Mason, who is tasked with uncovering a conspiracy involving a mysterious numbers station. Players experience various missions across different locations, including Cuba, Vietnam, and the Soviet Union.</p>
+        
+        <h2>Gameplay Mechanics</h2>
+        <p>Black Ops features a variety of gameplay mechanics, including a robust multiplayer mode, customizable loadouts, and a unique currency system for purchasing weapons and equipment. The game also introduced the popular Zombies mode, where players can team up to fight against waves of undead enemies.</p>
+    </section>
+    <footer>
+    
+</body>
+<body>
+    <header>
+        <h1>Call of Duty: Warzone</h1>
+    </header>
+    <section>
+        <h2>Game Overview</h2>
+        <p>Call of Duty: Warzone is a free-to-play battle royale game released in March 2020. It is part of the Call of Duty franchise and is set in the fictional city of Verdansk.</p>
+        
+        <h2>Storyline</h2>
+        <p>Warzone features a narrative that intertwines with the events of Call of Duty: Modern Warfare. Players engage in combat as they fight to be the last person or team standing in a large-scale battle.</p>
+        
+        <h2>Gameplay Mechanics</h2>
+        <p>The game supports up to 150 players in a single match, with various modes including solo, duo, and squad play. Players can find weapons, equipment, and vehicles throughout the map, and the gameplay emphasizes strategy and teamwork.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Large open-world map with diverse environments</li>
+            <li>Cross-platform play</li>
+            <li>In-game currency system for purchasing items</li>
+            <li>Regular updates and seasonal content</li>
+        </ul>
+    </section>
+    <footer>
+    
+</body>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
 
