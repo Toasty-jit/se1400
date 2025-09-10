@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Competitor Visual Audit — Student Tool</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:1000px;margin:24px auto;padding:16px}
+textarea{width:100%;height:120px;font-family:monospace}
+.row{display:flex;gap:12px;align-items:flex-start}
+.card{border:1px solid #ddd;padding:12px;border-radius:8px;background:#fff}
+button{padding:8px 12px;border-radius:8px;border:1px solid #888;background:#f6f6f6}
+pre{white-space:pre-wrap;word-break:break-word}
+.result{margin-top:12px}
+.site{margin-bottom:18px}
+.chip{display:inline-block;padding:4px 8px;margin:4px;border-radius:999px;border:1px solid #eee;background:#fafafa}
+table{border-collapse:collapse;width:100%}
+td,th{padding:6px;border:1px solid #eee}
+.muted{color:#666;font-size:0.9rem}
+</style>
+</head>
+<body>
+<h1>Competitor Visual Audit — Student Tool</h1>
+<p>Paste each competitor homepage URL on its own line, then click <strong>Analyze</strong>. This page uses a CORS proxy to fetch pages (some sites may block cross-origin access). For best results test on simple public sites.</p>
+
+
+<div class="card">
+<label for="urls"><strong>Competitor URLs (one per line)</strong></label>
+<textarea id="urls" placeholder="https://example.com"></textarea>
+<div style="margin-top:8px">
+<label for="proxy">CORS Proxy (optional)</label>
+<input id="proxy" style="width:60%" placeholder="https://api.allorigins.win/raw?url=" />
+<button id="analyze">Analyze</button>
+<button id="clear">Clear results</button>
+</div>
+<p class="muted">Default proxy (if left blank): <code>https://api.allorigins.win/raw?url=</code></p>
+</div>
+
+
+<div id="results" class="result"></div>
+
+
+<script>
+// Heuristic audit in client-side JS. Works best for simple, non-JS-heavy sites.
+const COLOR_REGEX = /(#(?:[0-9a-fA-F]{3}){1,2}\b|rgba?\([^\)]+\)|hsla?\([^\)]+\))/g;
+
+
+async function fetchViaProxy(url, proxyBase){
+const encoded = encodeURIComponent(url);
+const proxy = (proxyBase && proxyBase.trim()) || 'https://api.allorigins.win/raw?url=';
+const fetchUrl = proxy + encoded;
+const res = await fetch(fetchUrl);
+if(!res.ok) throw new Error('Fetch failed: '+res.status);
+return await res.text();
+}
+
+
+function extractStylesheetLinks(doc, base){
+const links = [...doc.querySelectorAll('link[rel~="stylesheet"]')].map(l=>l.href).filter(Boolean);
+return links.map(h=>new URL(h, base).href);
+}
+
+
+function gatherColorsFromCssText(text){
+const out = [];
+if(!text) return out;
+let m;
+while((m = COLOR_REGEX.exec(text)) !== null){ out.push(m[1].toLowerCase()); }
+return out;
+}
+
+
+function detectContentTypes(doc, textLower){
+const found = new Set();
+const links = [...doc.querySelectorAll('a')].map(a=>(a.href||'') + ' ' + (a.textContent||'')).join(' ').toLowerCase();
+if(doc.querySelector('video') || links.includes('youtube.com') || links.includes('vimeo.com')) found.add('video');
+if(doc.querySelector('audio')) found.add('audio');
+if(doc.querySelector('form')) found.add('forms');
+if(doc.querySelector('table')) found.add('tables');
+const KEYWORD_HINTS = { blog:['blog','/blog','news','articles','post'], product:['product','/product','pricing','shop','store','buy'], portfolio:['portfolio','work','projects','case-study'], contact:['contact','/contact'], about:['about','/about'], careers:['careers','jobs','join-us'] };
+</html>
