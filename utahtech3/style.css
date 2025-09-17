@@ -63,3 +63,10 @@ main {
 #studenthero { background-image: url('studenthero.jpg'); }
 #facultyhero { background-image: url('facultyhero.jpg'); }
 #students { background-image: url('students.jpg'); }
+#facultyhero {
+    height: 300px;
+    background-color: red;
+    background-image: url('facultyhero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
