@@ -118,3 +118,7 @@ footer {
     background-position: center;
 }
 
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
