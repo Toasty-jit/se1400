@@ -50,6 +50,8 @@ header h1 {
     line-height: 140%;
     padding: .5rem;
     margin-bottom: 0;
+    background-image: url('images/utahtechlogo.svg');
+
 }
 
 /* Navigation Styles */
@@ -116,10 +118,3 @@ footer {
     background-position: center;
 }
 
-#utahtechlogo {
-    height: 300px;
-    background-image: url('images/utahtechlogo.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-}
