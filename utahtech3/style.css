@@ -23,6 +23,7 @@ header {
 header h1 {
     line-height: 140%;
     padding: .5rem;
+    margin-bottom: 0;
 }
 
 /* Navigation Styles */
