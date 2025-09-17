@@ -15,9 +15,35 @@ body {
 /* Header Styles */
 header {
     background-color: #003058;
-    color: #FFFFFF;
-    font-family: Georgia, serif;
-    padding: 1em;
+    color: #ffffff; /* This will color the text inside the header */
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Added for positioning the logo */
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em; 
+    color: #ffffff;
+    background-image: url('utahtechlogo.svg'); /* Path to your logo */
+    background-repeat: no-repeat;
+    background-position: right center; /* Aligns to the right and vertically centers */
+    background-size: auto 60px; /* Scales the image to fit the height */
+    padding-right: 70px; /* Adds space so the text doesn't overlap the logo */
+}
+
+/* Optional: This rule can be used to set a specific size for the logo if background-size isn't working as desired */
+h1::before {
+    content: '';
+    display: block;
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-image: url('utahtechlogo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
 }
 
 header h1 {
