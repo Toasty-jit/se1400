@@ -2,6 +2,7 @@ body {
     background: linear-gradient(to bottom, #eeeeee, #ffffff);    
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
+    background-attachment: fixed;
 }
 
 #wrapper {
