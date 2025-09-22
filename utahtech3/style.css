@@ -91,6 +91,10 @@ footer {
     background-image: url('images/studenthero.jpg');
 }
 
+#utahtechlogo {
+    background-image: url('images/utahtechlogo.svg');
+}
+
 main {
     padding-left: .5rem;
     padding-right: .5rem;
