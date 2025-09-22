@@ -21,16 +21,17 @@ header {
 
 h1 {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     font-size: 2em; 
     color: #ffffff;
-    background-image: url('utahtechlogo.svg'); 
+    background-image: url('images/utahtechlogo.svg'); 
     background-repeat: no-repeat;
     background-position: right center; 
-    background-size: auto 60px;
+    background-size: 60px auto; 
     padding-right: 70px; 
-    background-origin: content-box; /* added per instructions */
+    background-origin: content-box; 
 }
+
 
 /* Navigation Styles */
 nav {
