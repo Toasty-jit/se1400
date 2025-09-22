@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #e6f0ff, #ffffff); /* gradient */
+    background: linear-gradient(to bottom, #e6f0ff, #ffffff);
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -8,7 +8,7 @@ body {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #ffffff; /* white wrapper background */
+    background-color: #ffffff; 
 }
 
 header {
@@ -38,7 +38,7 @@ nav {
     font-weight: bold;
     background-color: #ffffff;
     padding: .5rem;
-    padding-left: 2rem; /* already correct */
+    padding-left: 2rem; 
 }
 
 nav a {
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    color: #003058; /* correct text color for h3 */
+    color: #003058; 
 }
 
 .ut {
