@@ -1,24 +1,24 @@
-/* Global Styles */
+
 body {
     background-color: #ffffff;
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
 }
 
-/* Wrapper ID */
+
 #wrapper {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
 
-/* Header Styles */
+
 header {
     background-color: #003058;
-    color: #ffffff; /* This will color the text inside the header */
+    color: #ffffff; 
     text-align: left;
     padding: .5rem;
-    position: relative; /* Added for positioning the logo */
+    position: relative; 
 }
 
 h1 {
