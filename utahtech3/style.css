@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    background: linear-gradient(to bottom, #e6f0ff, #ffffff);    
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -29,7 +29,7 @@ h1 {
     background-position: right; 
     background-size: 100px auto; 
     padding-right: 0px; 
-    background-origin: content-box; 
+    background-origin: content-box;
 }
 
 
