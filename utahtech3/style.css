@@ -93,7 +93,6 @@ footer {
     color: #ffffff;
 }
 
-/* Add this new rule to your existing style.css file */
 
 #facultyhero {
     height: 300px;
@@ -120,6 +119,6 @@ footer {
 }
 
 main {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
