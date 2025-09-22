@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 
-/* Navigation Styles */
+
 nav {
     font-weight: bold;
     background-color: #ffffff;
