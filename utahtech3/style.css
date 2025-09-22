@@ -28,7 +28,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: right; 
     background-size: 100px auto; 
-    padding-right: 70px; 
+    padding-right: 0px; 
     background-origin: content-box; 
 }
 
