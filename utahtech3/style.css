@@ -26,7 +26,7 @@ h1 {
     color: #ffffff;
     background-image: url('images/utahtechlogo.svg'); 
     background-repeat: no-repeat;
-    background-position: right center; 
+    background-position: right; 
     background-size: 60px auto; 
     padding-right: 70px; 
     background-origin: content-box; 
