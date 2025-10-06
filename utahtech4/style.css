@@ -1,4 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0px;
     background: linear-gradient(to bottom, #eeeeee, #ffffff);    
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
@@ -6,17 +11,21 @@ body {
 }
 
 #wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #ffffff; 
     max-width: 2048px;
     min-width: 960px;
-    box-shadow: 0px 3px 3px rgba(66.66.66.03);
-
 }
 
 header {
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
+
     background-color: #003058;
     color: #ffffff; 
     text-align: left;
@@ -24,8 +33,12 @@ header {
     position: relative; 
 }
 
+header h1,
 h1 {
     margin: 0;
+}
+
+h1 {
     padding: 0.5rem;
     font-size: 2em; 
     color: #ffffff;
@@ -37,19 +50,43 @@ h1 {
     background-origin: content-box;
 }
 
-
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 nav {
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+
+    background-color: #424242; 
+    top: 0;                    
+    margin: 0;
+    padding: 0;
     font-weight: bold;
-    background-color: #ffffff;
-    padding: .5rem;
-    padding-left: 2rem; 
+    z-index: 1000;             
 }
 
 nav a {
+    color: #FFFFFF;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: #003058;
 }
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+nav ul li {
+    flex: 1;
+}
+
+
+
 
 h2 {
     color: #424242;
@@ -70,16 +107,10 @@ dt {
     font-weight: bold;
 }
 
-footer {
-    font-size: .70rem;
-    font-style: italic;
-    text-align: center;
-    padding: 1rem;
-    background-color: #003058;
-    color: #ffffff;
-}
-
 #facultyhero, #homehero, #studenthero {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,6 +132,45 @@ footer {
 }
 
 main {
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+
+    background: #ffffff;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+.horizontal-list {
+  display: flex; /* Makes the ul a flex container */
+  justify-content: space-between; /* Distributes items evenly with space between them */
+  /* Other flexbox properties like align-items, gap, etc. can be used */
+  gap: 20px; /* Adds space between flex items */
+}
+
+/* Optional: Remove default list styling */
+.horizontal-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+main img {
+    float: right;
+    padding-left: 2rem;
+}
+
+footer {
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
+
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+    background-color: #003058;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #BA1C21;
 }
