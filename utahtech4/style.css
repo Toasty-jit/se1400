@@ -140,13 +140,12 @@ main {
     padding-right: 2rem;
 }
 .horizontal-list {
-  display: flex; /* Makes the ul a flex container */
-  justify-content: space-between; /* Distributes items evenly with space between them */
-  /* Other flexbox properties like align-items, gap, etc. can be used */
-  gap: 20px; /* Adds space between flex items */
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
 }
 
-/* Optional: Remove default list styling */
+
 .horizontal-list {
   list-style-type: none;
   padding-left: 0;
